@@ -73,9 +73,11 @@ public class IndeterminateView extends View {
         int hMode = MeasureSpec.getMode(heightMeasureSpec);
         int h;
         switch (hMode) {
-            case MeasureSpec.AT_MOST:
             case MeasureSpec.EXACTLY:
-                h = MeasureSpec.getSize(widthMeasureSpec);
+                h = MeasureSpec.getSize(heightMeasureSpec);
+                break;
+            case MeasureSpec.AT_MOST:
+                h = Math.min(height, MeasureSpec.getSize(heightMeasureSpec));
                 break;
             case MeasureSpec.UNSPECIFIED:
             default:
