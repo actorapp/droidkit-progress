@@ -1,1 +1,1 @@
-include ':progress'
+include ':progress', ':sample'
