@@ -16,7 +16,7 @@ apply plugin: 'maven'
 apply plugin: 'signing'
 
 group = 'com.droidkit'
-version = '0.4'
+version = '0.5'
 
 android {
     compileSdkVersion 19
@@ -26,7 +26,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 19
         versionCode 1
-        versionName "0.4"
+        versionName "0.5"
     }
     buildTypes {
         release {
@@ -116,10 +116,6 @@ project.afterEvaluate {
                             developer {
                                 id 'ex3ndr'
                                 name 'Stepan Korshakov'
-                            }
-                            developer {
-                                id 'rayevg'
-                                name 'Evgeny Avsievich'
                             }
                         }
                     }
